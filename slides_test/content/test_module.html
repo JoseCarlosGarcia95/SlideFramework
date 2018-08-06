@@ -1,0 +1,16 @@
+<div class="container vertical-center">
+  <h2>Test module</h2>
+  <hr>
+  <div id="ajax-response"></div>
+</div>
+
+  <script type="text/javascript">
+    $.ajaxSetup({
+	error: function(xhr, status, error) {
+	    alert("An AJAX error occured: " + status + "\nError: " + error);
+	}
+    });
+    $.get('my-modules/custom_module', function(data) {
+	$('#ajax-response').html('<h2>' + data['text'] + '</h2>');
+    });
+</script>

@@ -1,0 +1,18 @@
+{
+    /* Your slide title */
+    "title" : "Hello, world!",
+
+    /* Here your slides HTML files */
+    "slides" : [
+	"content/title.html",
+	"content/boostrap.html",
+	"content/charts.html",
+	"content/latex.html",
+	"content/test_module.html"
+    ],
+
+    /* Here if you want to add an extra feature to SlideFramework backend */
+    "modules" : {
+	"custom_module" : "extra/custom_module.py"
+    }
+}
